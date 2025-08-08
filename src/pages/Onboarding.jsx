@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Onboarding() {
-  const handleFirstTap = () => {
+    const navigate = useNavigate();
+
+    const handleFirstTap = () => {
     const el = document.documentElement;
     if (el.requestFullscreen) {
       el.requestFullscreen().catch(err => console.log("Fullscreen failed:", err));
@@ -32,7 +34,7 @@ export default function Onboarding() {
         onClick={() => navigate("/feed")}
         className="bg-black text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg active:scale-95 transition"
       >
-        Get Started
+        Style me up
       </button>
     </div>
   );
