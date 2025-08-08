@@ -10,15 +10,18 @@ export default function SwipeCard({ card, isTop, onSwipe }) {
 
   return (
     <motion.div
-      className="absolute w-full h-full rounded-xl shadow-lg bg-white overflow-hidden"
+      className="absolute w-full h-full rounded-xl shadow-lg overflow-hidden bg-white"
       style={{ x, rotate }}
       drag={isTop ? "x" : false}
       dragConstraints={{ left: 0, right: 0 }}
+      dragElastic={0.2}
       onDragEnd={(e, info) => {
         if (info.offset.x > 150) {
           onSwipe("right", card.id);
         } else if (info.offset.x < -150) {
           onSwipe("left", card.id);
+        } else {
+          x.set(0); // snap back
         }
       }}
       initial={{ scale: 1, opacity: 1 }}
@@ -26,11 +29,16 @@ export default function SwipeCard({ card, isTop, onSwipe }) {
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.3 }}
     >
-      <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
+      {/* Make sure image allows swipe gestures */}
+      <img
+        src={card.image}
+        alt={card.title}
+        className="w-full h-full object-cover pointer-events-none"
+      />
 
       {/* Like Icon */}
       <motion.div
-        className="absolute top-6 left-6 bg-black-500 text-white px-4 py-2 rounded-lg text-xl font-bold"
+        className="absolute top-6 left-6 bg-green-500 text-white px-4 py-2 rounded-lg text-xl font-bold"
         style={{ opacity: opacityLike }}
       >
         <FaHeart />
