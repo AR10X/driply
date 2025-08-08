@@ -1,13 +1,10 @@
+import { Routes, Route } from "react-router-dom";
+import Onboarding from "./pages/Onboarding";
 
-import './App.css'
-
-function App() {
-
+export default function App() {
   return (
-    <>
-      <div>Driply</div>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Onboarding />} />
+    </Routes>
+  );
 }
-
-export default App

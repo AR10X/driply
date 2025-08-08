@@ -1,0 +1,9 @@
+{
+  "name": "Driply",
+  "short_name": "Driply",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B6B",
+  "orientation": "portrait"
+}
