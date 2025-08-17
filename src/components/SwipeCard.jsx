@@ -1,60 +1,85 @@
-// SwipeCard.jsx
+import { useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import { FaHeart, FaTimes } from "react-icons/fa";
+import { XMarkIcon, HeartIcon } from "@heroicons/react/24/outline";
 
-export default function SwipeCard({ card, isTop, onSwipe }) {
+export default function SwipeCard({ card, isTop, onSwipe, index, totalCards }) {
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-15, 15]);
-  const opacityLike = useTransform(x, [50, 200], [0, 1]);
-  const opacityNope = useTransform(x, [-50, -200], [0, 1]);
+
+  const [swipeDirection, setSwipeDirection] = useState(null);
+
+  const handleDragEnd = (event, info) => {
+    if (info.offset.x > 100) {
+      setSwipeDirection("right");
+      onSwipe("right", card.id);
+    } else if (info.offset.x < -100) {
+      setSwipeDirection("left");
+      onSwipe("left", card.id);
+    }
+  };
+
+  const offset = totalCards - index - 1;
+  const scale = isTop ? 1 : 1 - offset * 0.06;
+  const yOffset = isTop ? 0 : offset * 40;
+  const opacity = isTop ? 1 : 1 - offset * 0.15;
 
   return (
     <motion.div
-      className="absolute w-full h-full rounded-xl shadow-lg overflow-hidden bg-white"
+      className="absolute font-recoleta w-full h-full rounded-3xl shadow-lg bg-white overflow-hidden flex flex-col"
       style={{ x, rotate }}
       drag={isTop ? "x" : false}
-      dragConstraints={{ left: 0, right: 0 }}
       dragElastic={0.2}
-      onDragEnd={(e, info) => {
-        if (info.offset.x > 150) {
-          onSwipe("right", card.id);
-        } else if (info.offset.x < -150) {
-          onSwipe("left", card.id);
-        } else {
-          x.set(0); // snap back
-        }
+      onDragEnd={isTop ? handleDragEnd : undefined}
+      initial={{ scale: 0.9, opacity: 0, y: yOffset }}
+      animate={{ scale, opacity, y: yOffset,}}
+      exit={{
+        x: swipeDirection === "right" ? 500 : -500,
+        rotate: swipeDirection === "right" ? 25 : -25,
+        opacity: 0,
+        scale: 1.1,
       }}
-      initial={{ scale: 1, opacity: 1 }}
-      animate={{ scale: 1, opacity: 1 }}
-      exit={{ opacity: 0, scale: 0.8 }}
-      transition={{ duration: 0.3 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      {/* Make sure image allows swipe gestures */}
-      <img
-        src={card.image}
-        alt={card.title}
-        className="w-full h-full object-cover pointer-events-none"
-      />
+      {/* Image */}
+      <div className="h-[65%] flex-shrink-0">
+        <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
+      </div>
 
-      {/* Like Icon */}
-      <motion.div
-        className="absolute top-6 left-6 bg-green-500 text-white px-4 py-2 rounded-lg text-xl font-bold"
-        style={{ opacity: opacityLike }}
-      >
-        <FaHeart />
-      </motion.div>
+      {/* Content */}
+      <div className="flex flex-col justify-between flex-1 p-4">
+        <div>
+          <h2 className="text-xl font-bold text-gray-900">{card.title}</h2>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {card.tags.map((tag, i) => (
+              <span key={i} className="px-3 py-1 bg-[#ffe6df] text-gray-800 text-xs rounded-full">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <p className="mt-3 text-xl font-semibold text-gray-900">₹ {card.price}</p>
+        </div>
 
-      {/* Dislike Icon */}
-      <motion.div
-        className="absolute top-6 right-6 bg-red-500 text-white px-4 py-2 rounded-lg text-xl font-bold"
-        style={{ opacity: opacityNope }}
-      >
-        <FaTimes />
-      </motion.div>
-
-      {/* Title */}
-      <div className="absolute bottom-0 left-0 right-0 bg-black text-white p-4 text-lg font-semibold">
-        {card.title}
+        {/* Action Buttons */}
+        <div className="flex justify-center gap-8 mt-4">
+          <button
+            className="p-4 bg-red-100 rounded-full"
+            onClick={() => {
+              setSwipeDirection("left");
+              onSwipe("left", card.id);
+            }}
+          >
+            <XMarkIcon className="w-8 h-8 text-red-500" />
+          </button>
+          <button
+            className="p-4 bg-green-100 rounded-full"
+            onClick={() => {
+              setSwipeDirection("right");
+              onSwipe("right", card.id);
+            }}
+          >
+            <HeartIcon className="w-8 h-8 text-green-500" />
+          </button>
+        </div>
       </div>
     </motion.div>
   );

@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "title": "Urban Edge Hoodie",
+    "image": "/images/1.jpg",
+    "tags": ["Streetwear", "Date Night"],
+    "price": 2499
+  },
+  {
+    "id": 2,
+    "title": "Linen Breeze Shirt",
+    "image": "/images/2.jpg",
+    "tags": ["Summer", "Casual"],
+    "price": 1799
+  },
+  {
+    "id": 3,
+    "title": "Alpine Puffer Jacket",
+    "image": "/images/3.jpg",
+    "tags": ["Winter", "Chic"],
+    "price": 3299
+  },
+  {
+    "id": 4,
+    "title": "90s Vintage Tee",
+    "image": "/images/4.jpg",
+    "tags": ["Retro", "Street"],
+    "price": 999
+  },
+  {
+    "id": 5,
+    "title": "Tech Jogger Set",
+    "image": "/images/5.jpg",
+    "tags": ["Athleisure", "Sporty"],
+    "price": 1899
+  },
+  {
+    "id": 6,
+    "title": "Silk Evening Blouse",
+    "image": "/images/6.jpg",
+    "tags": ["Formal", "Date Night"],
+    "price": 2799
+  },
+  {
+    "id": 7,
+    "title": "Cargo Utility Pants",
+    "image": "/images/7.jpg",
+    "tags": ["Streetwear", "Urban"],
+    "price": 2199
+  },
+  {
+    "id": 8,
+    "title": "Denim Overalls",
+    "image": "/images/8.jpg",
+    "tags": ["Vintage", "Casual"],
+    "price": 2899
+  },
+  {
+    "id": 9,
+    "title": "Cropped Leather Jacket",
+    "image": "/images/9.jpg",
+    "tags": ["Biker", "Edgy"],
+    "price": 3999
+  },
+  {
+    "id": 10,
+    "title": "Oversized Sweater",
+    "image": "/images/10.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 1599
+  },
+  {
+    "id": 11,
+    "title": "Classic Trench Coat",
+    "image": "/images/11.jpg",
+    "tags": ["Formal", "Chic"],
+    "price": 4999
+  },
+  {
+    "id": 12,
+    "title": "Floral Summer Dress",
+    "image": "/images/12.jpg",
+    "tags": ["Summer", "Casual"],
+    "price": 2199
+  },
+  {
+    "id": 13,
+    "title": "Wool Knit Scarf",
+    "image": "/images/13.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 799
+  },
+  {
+    "id": 14,
+    "title": "Denim Jacket",
+    "image": "/images/14.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 2699
+  },
+  {
+    "id": 15,
+    "title": "Cotton Polo Shirt",
+    "image": "/images/15.jpg",
+    "tags": ["Casual", "Sporty"],
+    "price": 1399
+  },
+  {
+    "id": 16,
+    "title": "Silk Tie",
+    "image": "/images/16.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 599
+  },
+  {
+    "id": 17,
+    "title": "Running Sneakers",
+    "image": "/images/17.jpg",
+    "tags": ["Sporty", "Athleisure"],
+    "price": 3499
+  },
+  {
+    "id": 18,
+    "title": "Corduroy Pants",
+    "image": "/images/18.jpg",
+    "tags": ["Retro", "Casual"],
+    "price": 1999
+  },
+  {
+    "id": 19,
+    "title": "Leather Belt",
+    "image": "/images/19.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 1299
+  },
+  {
+    "id": 20,
+    "title": "Striped T-Shirt",
+    "image": "/images/20.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 999
+  },
+  {
+    "id": 21,
+    "title": "Plaid Flannel Shirt",
+    "image": "/images/21.jpg",
+    "tags": ["Winter", "Casual"],
+    "price": 1599
+  },
+  {
+    "id": 22,
+    "title": "Mesh Sports Cap",
+    "image": "/images/22.jpg",
+    "tags": ["Sporty", "Casual"],
+    "price": 699
+  },
+  {
+    "id": 23,
+    "title": "Denim Shorts",
+    "image": "/images/23.jpg",
+    "tags": ["Summer", "Casual"],
+    "price": 1399
+  },
+  {
+    "id": 24,
+    "title": "Wool Fedora Hat",
+    "image": "/images/24.jpg",
+    "tags": ["Formal", "Retro"],
+    "price": 1899
+  },
+  {
+    "id": 25,
+    "title": "Polo Sweater",
+    "image": "/images/25.jpg",
+    "tags": ["Winter", "Casual"],
+    "price": 2199
+  },
+  {
+    "id": 26,
+    "title": "Graphic Hoodie",
+    "image": "/images/26.jpg",
+    "tags": ["Streetwear", "Casual"],
+    "price": 2499
+  },
+  {
+    "id": 27,
+    "title": "Lace Cocktail Dress",
+    "image": "/images/27.jpg",
+    "tags": ["Formal", "Date Night"],
+    "price": 3799
+  },
+  {
+    "id": 28,
+    "title": "Cargo Shorts",
+    "image": "/images/28.jpg",
+    "tags": ["Casual", "Sporty"],
+    "price": 1499
+  },
+  {
+    "id": 29,
+    "title": "Denim Shirt Dress",
+    "image": "/images/29.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 2699
+  },
+  {
+    "id": 30,
+    "title": "Wool Overcoat",
+    "image": "/images/30.jpg",
+    "tags": ["Winter", "Formal"],
+    "price": 5599
+  },
+  {
+    "id": 31,
+    "title": "Leather Chelsea Boots",
+    "image": "/images/31.jpg",
+    "tags": ["Formal", "Edgy"],
+    "price": 4999
+  },
+  {
+    "id": 32,
+    "title": "Denim Vest",
+    "image": "/images/32.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 1999
+  },
+  {
+    "id": 33,
+    "title": "Athletic Shorts",
+    "image": "/images/33.jpg",
+    "tags": ["Sporty", "Athleisure"],
+    "price": 999
+  },
+  {
+    "id": 34,
+    "title": "Bohemian Maxi Dress",
+    "image": "/images/34.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 3299
+  },
+  {
+    "id": 35,
+    "title": "Classic Blazer",
+    "image": "/images/35.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 4299
+  },
+  {
+    "id": 36,
+    "title": "Fleece Pullover",
+    "image": "/images/36.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 2199
+  },
+  {
+    "id": 37,
+    "title": "Crop Top Tee",
+    "image": "/images/37.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 899
+  },
+  {
+    "id": 38,
+    "title": "Wool Beanie",
+    "image": "/images/38.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 799
+  },
+  {
+    "id": 39,
+    "title": "Suede Loafers",
+    "image": "/images/39.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 3599
+  },
+  {
+    "id": 40,
+    "title": "Cargo Jacket",
+    "image": "/images/40.jpg",
+    "tags": ["Streetwear", "Urban"],
+    "price": 2799
+  },
+  {
+    "id": 41,
+    "title": "Striped Midi Dress",
+    "image": "/images/41.jpg",
+    "tags": ["Summer", "Casual"],
+    "price": 2499
+  },
+  {
+    "id": 42,
+    "title": "Puffer Vest",
+    "image": "/images/42.jpg",
+    "tags": ["Winter", "Sporty"],
+    "price": 2999
+  },
+  {
+    "id": 43,
+    "title": "Cotton Henley Shirt",
+    "image": "/images/43.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 1399
+  },
+  {
+    "id": 44,
+    "title": "Tweed Skirt",
+    "image": "/images/44.jpg",
+    "tags": ["Formal", "Chic"],
+    "price": 2499
+  },
+  {
+    "id": 45,
+    "title": "Knit Cardigan",
+    "image": "/images/45.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 1899
+  },
+  {
+    "id": 46,
+    "title": "Leather Moto Gloves",
+    "image": "/images/46.jpg",
+    "tags": ["Biker", "Edgy"],
+    "price": 1599
+  },
+  {
+    "id": 47,
+    "title": "Boho Fringe Vest",
+    "image": "/images/47.jpg",
+    "tags": ["Casual", "Retro"],
+    "price": 1799
+  },
+  {
+    "id": 48,
+    "title": "Running Tank Top",
+    "image": "/images/48.jpg",
+    "tags": ["Sporty", "Athleisure"],
+    "price": 799
+  },
+  {
+    "id": 49,
+    "title": "Velvet Evening Gown",
+    "image": "/images/49.jpg",
+    "tags": ["Formal", "Date Night"],
+    "price": 4599
+  },
+  {
+    "id": 50,
+    "title": "Canvas Backpack",
+    "image": "/images/50.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 1999
+  },
+  {
+    "id": 51,
+    "title": "Wide-leg Trousers",
+    "image": "/images/51.jpg",
+    "tags": ["Formal", "Chic"],
+    "price": 2899
+  },
+  {
+    "id": 52,
+    "title": "Plaid Shirt Jacket",
+    "image": "/images/52.jpg",
+    "tags": ["Casual", "Winter"],
+    "price": 2699
+  },
+  {
+    "id": 53,
+    "title": "Suede Ankle Boots",
+    "image": "/images/53.jpg",
+    "tags": ["Formal", "Edgy"],
+    "price": 3999
+  },
+  {
+    "id": 54,
+    "title": "Cropped Hoodie",
+    "image": "/images/54.jpg",
+    "tags": ["Streetwear", "Casual"],
+    "price": 2299
+  },
+  {
+    "id": 55,
+    "title": "Flannel Pajama Set",
+    "image": "/images/55.jpg",
+    "tags": ["Cozy", "Winter"],
+    "price": 1899
+  },
+  {
+    "id": 56,
+    "title": "Denim Mini Skirt",
+    "image": "/images/56.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 1499
+  },
+  {
+    "id": 57,
+    "title": "Oxford Dress Shirt",
+    "image": "/images/57.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 2199
+  },
+  {
+    "id": 58,
+    "title": "Sporty Windbreaker",
+    "image": "/images/58.jpg",
+    "tags": ["Sporty", "Athleisure"],
+    "price": 2999
+  },
+  {
+    "id": 59,
+    "title": "Floral Print Scarf",
+    "image": "/images/59.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 999
+  },
+  {
+    "id": 60,
+    "title": "Chunky Knit Sweater",
+    "image": "/images/60.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 2399
+  },
+  {
+    "id": 61,
+    "title": "Classic Denim Jeans",
+    "image": "/images/61.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 2199
+  },
+  {
+    "id": 62,
+    "title": "Leather Crossbody Bag",
+    "image": "/images/62.jpg",
+    "tags": ["Formal", "Chic"],
+    "price": 3599
+  },
+  {
+    "id": 63,
+    "title": "Camo Print Jacket",
+    "image": "/images/63.jpg",
+    "tags": ["Streetwear", "Edgy"],
+    "price": 2799
+  },
+  {
+    "id": 64,
+    "title": "Slip-On Sneakers",
+    "image": "/images/64.jpg",
+    "tags": ["Casual", "Sporty"],
+    "price": 2499
+  },
+  {
+    "id": 65,
+    "title": "Pleated Midi Skirt",
+    "image": "/images/65.jpg",
+    "tags": ["Chic", "Formal"],
+    "price": 2699
+  },
+  {
+    "id": 66,
+    "title": "Cotton Crew Neck Tee",
+    "image": "/images/66.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 899
+  },
+  {
+    "id": 67,
+    "title": "Trench Raincoat",
+    "image": "/images/67.jpg",
+    "tags": ["Formal", "Winter"],
+    "price": 4399
+  },
+  {
+    "id": 68,
+    "title": "Denim Jumpsuit",
+    "image": "/images/68.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 2999
+  },
+  {
+    "id": 69,
+    "title": "Silk Neck Scarf",
+    "image": "/images/69.jpg",
+    "tags": ["Formal", "Chic"],
+    "price": 1299
+  },
+  {
+    "id": 70,
+    "title": "Leather Ankle Boots",
+    "image": "/images/70.jpg",
+    "tags": ["Edgy", "Formal"],
+    "price": 3999
+  },
+  {
+    "id": 71,
+    "title": "Striped Sweater Dress",
+    "image": "/images/71.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 2499
+  },
+  {
+    "id": 72,
+    "title": "Cotton Cargo Pants",
+    "image": "/images/72.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 1999
+  },
+  {
+    "id": 73,
+    "title": "Knitted Beanie",
+    "image": "/images/73.jpg",
+    "tags": ["Winter", "Cozy"],
+    "price": 699
+  },
+  {
+    "id": 74,
+    "title": "Floral Wrap Dress",
+    "image": "/images/74.jpg",
+    "tags": ["Casual", "Summer"],
+    "price": 2799
+  },
+  {
+    "id": 75,
+    "title": "Sport Compression Shirt",
+    "image": "/images/75.jpg",
+    "tags": ["Sporty", "Athleisure"],
+    "price": 1599
+  },
+  {
+    "id": 76,
+    "title": "Tweed Blazer",
+    "image": "/images/76.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 3899
+  },
+  {
+    "id": 77,
+    "title": "Denim Bucket Hat",
+    "image": "/images/77.jpg",
+    "tags": ["Casual", "Streetwear"],
+    "price": 999
+  },
+  {
+    "id": 78,
+    "title": "Leather Messenger Bag",
+    "image": "/images/78.jpg",
+    "tags": ["Formal", "Office"],
+    "price": 4299
+  },
+  {
+    "id": 79,
+    "title": "Ribbed Knit Dress",
+    "image": "/images/79.jpg",
+    "tags": ["Casual", "Winter"],
+    "price": 2199
+  },
+  {
+    "id": 80,
+    "title": "High-Top Sneakers",
+    "image": "/images/80.jpg",
+    "tags": ["Streetwear", "Sporty"],
+    "price": 3199
+  }
+]
